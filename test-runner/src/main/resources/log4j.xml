@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration debug="true" xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+
+    <appender name="console" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="%t %d{yyyy-MM-dd HH:mm:ss} %-6p %C %m%n"/>
+        </layout>
+    </appender>
+    <appender name="file" class="org.apache.log4j.RollingFileAppender">
+        <param name="append" value="false"/>
+        <param name="maxFileSize" value="100KB"/>
+        <param name="maxBackupIndex" value="5"/>
+        <param name="file" value="${workDir}/logs/mylog.log"/>
+        <!-- File layout -->
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="%t %d{yyyy-MM-dd HH:mm:ss} %p %m%n"/>
+        </layout>
+    </appender>
+    <root>
+        <level value="LOW"/>
+        <appender-ref ref="console"/>
+        <appender-ref ref="file"/>
+    </root>
+
+</log4j:configuration>
+
+        <!--
+        <configuration status="WARN">
+            <properties>
+                <property name="logMsgPattern">%d{HH:mm:ss} %-5level - %msg%n</property>
+            </properties>
+            <appenders>
+                <Console name="Console" target="SYSTEM_OUT">
+                    <PatternLayout pattern="${logMsgPattern}"/>
+                </Console>
+
+                <Routing name="Routing">
+                    <Routes pattern="$${ctx:threadId}">
+                        <Route>
+                            <RollingFile name="RollingFile-${ctx:threadId}" fileName="${sys:workDir}/logs/last-${ctx:threadId}.log" filePattern="${sys:workDir}/logs/%d{yyyy-MM-dd}/archived_%d{HH-mm}-${ctx:threadId}.log">
+                                <PatternLayout pattern="${logMsgPattern}"/>
+                                <Policies>
+                                    <OnStartupTriggeringPolicy />
+                                </Policies>
+                            </RollingFile>
+                        </Route>
+                    </Routes>
+                </Routing>
+            </appenders>
+
+            <loggers>
+                <root level="debug">
+                    <appender-ref ref="Console" level="debug" />
+                    <appender-ref ref="Routing" level="debug"/>
+                </root>
+            </loggers>
+        </configuration>
+                -->
+
+

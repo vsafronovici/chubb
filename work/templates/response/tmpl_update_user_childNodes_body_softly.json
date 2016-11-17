@@ -1,0 +1,16 @@
+{
+	"address" : {
+		"phone" : "##phone##"
+	},
+	"level3Field1" : {
+		"field1" : "f1",
+		"field2" : "f2"
+	},
+	"level2Field2" : {
+		"level3Field2" : {
+			"field1" : "f1z",
+			"field2" : "f2z"
+		}
+	}
+
+}

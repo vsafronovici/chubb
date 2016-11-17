@@ -1,0 +1,13 @@
+target/
+.classpath
+.project
+.settings
+/bin
+*.iml
+.DS_Store
+.tern-project
+.idea
+*.iml
+reports/
+logs/
+log-parser/src/test/resources/mylog.log

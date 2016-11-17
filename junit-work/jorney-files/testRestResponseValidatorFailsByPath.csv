@@ -1,0 +1,6 @@
+verb,paramName,paramValue
+SendRestRequest,req_tmpl_update_user.json,ReqEditUserData.csv[0]
+StoreParam,zip,address.zip
+StoreParam,leveledField,level1Field.level2Field1.level3Field2.field2
+ValidateRestResponseByPath,address.zip,%%zip%%
+ValidateRestResponseByPath,level1Field.level2Field1.level3Field2.field2,%%zip%%

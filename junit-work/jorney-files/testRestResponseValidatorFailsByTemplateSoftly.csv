@@ -1,0 +1,3 @@
+verb,paramName,paramValue
+SendRestRequest,req_tmpl_update_user.json,ReqEditUserData.csv[0]
+ValidateRestResponseByTemplateSoftly,resp_tmpl_update_user_body_softly.json,RespEditUserData.csv[1]

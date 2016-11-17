@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.producer.ws.chub.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soap:update>
+         <arg0>
+            <id>##id##</id>
+            <name>##name##</name>
+            <lastname>##lastname##</lastname>
+            <sex>M</sex>
+            <level1Field>
+               <level2Field1>
+                  <level3Field1>
+                     <field1>f1</field1>
+                     <field2>f2</field2>
+                  </level3Field1>
+                  <level3Field2>
+                     <field1>f1x</field1>
+                     <field2>f2x</field2>
+                  </level3Field2>
+               </level2Field1>
+               <level2Field2>
+                  <level3Field1>
+                     <field1>f1y</field1>
+                     <field2>f2y</field2>
+                  </level3Field1>
+                  <level3Field2>
+                     <field1>f1z</field1>
+                     <field2>f2z</field2>
+                  </level3Field2>
+               </level2Field2>
+            </level1Field>
+            <address>
+               <phone>##phone##</phone>
+               <street>new street</street>
+               <zip>new zip</zip>
+            </address>
+         </arg0>
+      </soap:update>
+   </soapenv:Body>
+</soapenv:Envelope>

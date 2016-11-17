@@ -1,0 +1,3 @@
+verb,paramName,paramValue
+SendSoapRequest,soap/soap_req_tmpl_update_user.xml,ReqEditUserData.csv[0]
+ValidateSoapResponseByChildNodesTemplate,soap/soap_resp_tmpl_update_user_childNodes_body.xml,RespEditUserData.csv[1]

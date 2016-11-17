@@ -1,0 +1,20 @@
+{
+  "id": "##id##",
+  "address": {
+    "phone": "##phone##",
+    "zip": "zip211"
+  },
+  "level1Field": {
+    "level2Field1": {
+      "level3Field1": {
+        "field1": "f1",
+        "field2": "f2"
+      },
+      "level3Field2": {
+        "field1": "f1x",
+        "field2": "f2x"
+      }
+    }
+  }
+
+}

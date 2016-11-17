@@ -1,0 +1,10 @@
+{
+  "request": {
+    "resource": "ws-producer-rest/rest/userres/users/user/edit/##id##",
+    "method": "PUT",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": "##body##"
+  }
+}

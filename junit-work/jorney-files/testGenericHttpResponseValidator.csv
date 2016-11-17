@@ -1,0 +1,6 @@
+verb,paramName,paramValue
+SendRestRequest,req_tmpl_update_user.json,ReqEditUserData.csv[0]
+ValidateResponseHttpStatusCode,statusCode,200
+ValidateResponseHttpHeaderValues,Content-Type,application/json
+ValidateResponseHttpStatusAndHeaderByTemplate,resp_tmpl_statusCode_and_Header.json,RespHeaderEditUserData.csv[0]
+ValidateResponseHttpStatusAndHeaderByTemplateSoftly,resp_tmpl_statusCode_and_Header_softly.json,RespHeaderEditUserData.csv[0]

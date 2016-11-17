@@ -1,0 +1,6 @@
+verb,paramName,paramValue
+SendRestRequest,tmpl_update_user.json,ReqEditUserData.csv[0]
+ValidateResponseHttpStatusCode,statusCode,200
+StoreParam,zip,address.zip
+SendRestRequest,tmpl_update_user.json,ReqEditUserData.csv[1]
+ValidateRestResponseByPath,address.zip,%%zip%%

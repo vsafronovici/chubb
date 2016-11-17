@@ -1,0 +1,33 @@
+{
+  "id": "##id##",
+  "name": "##name##",
+  "lastname": "##lastname##",
+  "sex": "M",
+  "address": {
+    "phone": "##phone##",
+    "zip": "zip211"
+  },
+  "level1Field": {
+    "level2Field1": {
+      "level3Field1": {
+        "field1": "f1",
+        "field2": "f2"
+      },
+      "level3Field2": {
+        "field1": "f1x",
+        "field2": "f2x"
+      }
+    },
+    "level2Field2": {
+      "level3Field1": {
+        "field1": "f1y",
+        "field2": "f2y"
+      },
+      "level3Field2": {
+        "field1": "f1z",
+        "field2": "f2z"
+      }
+    }
+  }
+
+}

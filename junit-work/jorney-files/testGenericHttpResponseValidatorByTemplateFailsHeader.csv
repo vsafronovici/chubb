@@ -1,0 +1,3 @@
+verb,paramName,paramValue
+SendRestRequest,req_tmpl_update_user.json,ReqEditUserData.csv[0]
+ValidateResponseHttpStatusAndHeaderByTemplate,resp_tmpl_statusCode_and_Header.json,RespHeaderEditUserData.csv[2]

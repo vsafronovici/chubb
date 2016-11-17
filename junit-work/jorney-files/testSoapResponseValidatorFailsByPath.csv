@@ -1,0 +1,6 @@
+verb,paramName,paramValue
+SendSoapRequest,soap/soap_req_tmpl_update_user.xml,ReqEditUserData.csv[0]
+StoreParam,zip,address.zip
+StoreParam,leveledField,level1Field.level2Field1.level3Field2.field2
+ValidateSoapResponseByPath,address.zip,%%zip%%
+ValidateSoapResponseByPath,level1Field.level2Field1.level3Field2.field2,%%zip%%

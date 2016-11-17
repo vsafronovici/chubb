@@ -1,0 +1,7 @@
+{
+  "name": "##name##",
+  "company": "%%company%%",
+  "person": {
+    "work": "##company## %%name%%"
+  }
+}

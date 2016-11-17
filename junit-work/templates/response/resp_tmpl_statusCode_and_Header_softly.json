@@ -1,0 +1,8 @@
+{
+  "response": {
+    "statusCode": "##statusCode##",
+    "headers": {
+      "token": "##token##"
+    }
+  }
+}
